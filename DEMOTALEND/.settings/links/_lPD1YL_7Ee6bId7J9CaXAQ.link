@@ -1,0 +1,51 @@
+{
+  "itemId" : "_lPD1YL_7Ee6bId7J9CaXAQ",
+  "contextList" : [ {
+    "contextName" : "Default",
+    "repoId" : "_CTky8LwWEe6kFdszHmB07A",
+    "parameterList" : [ {
+      "id" : "_CUex4bwWEe6kFdszHmB07A",
+      "name" : "SQLSERVER1_AdditionalParams"
+    }, {
+      "id" : "_CUex4rwWEe6kFdszHmB07A",
+      "name" : "SQLSERVER1_Port"
+    }, {
+      "id" : "_CUex47wWEe6kFdszHmB07A",
+      "name" : "SQLSERVER1_Database"
+    }, {
+      "id" : "_CUex5LwWEe6kFdszHmB07A",
+      "name" : "SQLSERVER1_Schema"
+    }, {
+      "id" : "_CUex5bwWEe6kFdszHmB07A",
+      "name" : "SQLSERVER1_Password"
+    }, {
+      "id" : "_CUex5rwWEe6kFdszHmB07A",
+      "name" : "SQLSERVER1_Login"
+    }, {
+      "id" : "_CUex57wWEe6kFdszHmB07A",
+      "name" : "SQLSERVER1_Server"
+    } ]
+  }, {
+    "contextName" : "Default",
+    "repoId" : "_kp7CwL5gEe64zsK5-QO0CQ",
+    "parameterList" : [ {
+      "id" : "_kqm_Rr5gEe64zsK5-QO0CQ",
+      "name" : "MariaDB_Server"
+    }, {
+      "id" : "_kqm_Rb5gEe64zsK5-QO0CQ",
+      "name" : "MariaDB_Login"
+    }, {
+      "id" : "_kqm_RL5gEe64zsK5-QO0CQ",
+      "name" : "MariaDB_Port"
+    }, {
+      "id" : "_kqm_Qb5gEe64zsK5-QO0CQ",
+      "name" : "MariaDB_Password"
+    }, {
+      "id" : "_kqm_Q75gEe64zsK5-QO0CQ",
+      "name" : "MariaDB_AdditionalParams"
+    }, {
+      "id" : "_kqm_Qr5gEe64zsK5-QO0CQ",
+      "name" : "MariaDB_Database"
+    } ]
+  } ]
+}
