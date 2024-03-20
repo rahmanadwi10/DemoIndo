@@ -1280,7 +1280,7 @@
     <elementParameter field="TEXT" name="USER" value="context.SQLSERVER1_Login"/>
     <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:xgVG/v51bFtuhl0Ea+MRf50SCp3TBUWNVFvFx70y0XH5hz3FpztauP9egsjT9XDk7TuevMrfJw=="/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;DATALAKE_TRANSAC&quot;"/>
-    <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="CREATE_IF_NOT_EXISTS"/>
+    <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="DROP_IF_EXISTS_AND_CREATE"/>
     <elementParameter field="CHECK" name="IDENTITY_INSERT" value="false"/>
     <elementParameter field="CLOSED_LIST" name="DATA_ACTION" value="INSERT"/>
     <elementParameter field="LABEL" name="NOTE" show="false" value="NOTE: batch size must be less than or equal to total number of parameter markers divided by number of columns"/>
@@ -1422,10 +1422,10 @@
       <column comment="" key="false" length="100" name="Affiliate" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="100" name="DATE_MONTH" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+      <column comment="" key="false" length="20" name="DATE_MONTH" nullable="true" pattern="&quot;MMMM&quot;" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="100" name="Date" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+      <column comment="" key="false" length="20" name="Date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATETIME" type="id_Date" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
       <column comment="" key="false" length="100" name="Carline" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
@@ -1485,10 +1485,10 @@
       <column comment="" key="false" length="100" name="Affiliate" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="100" name="DATE_MONTH" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+      <column comment="" key="false" length="20" name="DATE_MONTH" nullable="true" pattern="&quot;MMMM&quot;" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="100" name="Date" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+      <column comment="" key="false" length="20" name="Date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATETIME" type="id_Date" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
       <column comment="" key="false" length="100" name="Carline" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
@@ -1688,13 +1688,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="128;255;0"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_307a0b32-e5ba-4788-81fb-d04f937bf2d9"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>PhFBgv0SWxJ27hzZ1bNrNkjd1VvI1yIJDVhBFr8GxOq++CW6RBPDUQ8hDxSJ+IThc/Eo5SVZdGsk&#13;
-IGyYNxnJog==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_b58a6d98-d4be-41b5-bb23-4a7214d36979"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>8GmW9qAIY3KZxnIR/NP2HMCfENFdTmzryf40qrx0fHjB++4Kb2IyqjqvFo+orleBBFeEmp0DMb+Q&#13;
-8AI0vmsMTQ==</DigestValue></Reference></SignedInfo><SignatureValue>ULk3oUzKyycAjY0N6fH6Rto86A/h+k0qDA7iL9FaQkikQebOmwC5KSsUNY3L9WIxpR9ZezkuwBH7&#13;
-bftPNZcvSwpItnPzN0m2x9vWuOl0iyBeT/Yvq5gHql5gqrmOY59FPPLWYJkArXdLy+30VFXMy0UE&#13;
-E9FFVJFNFOqpu9LUy5Dk+zICv0VRIfxuU+7eLZi8XTNs/JbKi4WMrtqBSKp1Wzl5Z4kjBw0/DILe&#13;
-ihsxGbxwBEpQdIcTkNhhFykRMU4R3SS4JEehs6kOsXw8Why5GkpOqZzY1uPxSEsh+WXUw8o28cFI&#13;
-+NPdB4v++IMARskJA6n/l7vr+VfE1pnpET2oMA==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_46e45625-508f-494f-a9dc-d3ffed0531fb"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>6LPb2r4eo5ih3NYTLsxRrol/hTEq9NdRhx5NwtybtrBG0fgWNHONRpVKohnHKPKaTEpAFPlX3INn&#13;
+ZGv/8nR5VQ==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_5fa0b6b5-0047-479c-95b4-d073142eab91"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>M/maX+Zo/Gb6PqqWz3wDrUBW5u/WH6oqoA4bTv+myOJpHenVEKxrrjdAd+6z09CO6cNPuPBggBpY&#13;
+DYggsgy52g==</DigestValue></Reference></SignedInfo><SignatureValue>DLvdOFNSuyIKtSMy/vqLv85fz853FxXLuznpptolv5FTZfyRiUU80/kYRA2LRlOP1EFg8aZ2/bSL&#13;
+Htv6LFZM6bWLIJU/sRYGBOcVZqGt2Vi/ZRh5Jk4ZoCKgRSFx3YbU4Sfu/p1+25o5+LTM0E0oAZIX&#13;
+HksAqa0kNmevocvj7jcUuvPZ1QAtMQpZaluHyDpxtni8Vq6xJ0Oz2OIyfkZXrdc1J/nOr3VYLpGc&#13;
+N8aCIZ2gTMVLfNThqIyM61ezW3fyS1Y7GGFoxrimyrFBOSDxfrqiEjgB9HNpm+aoUlVQ/srasfA9&#13;
+nWsNqxv3FvX/IDW1ochDpFGTyFTbZrcoAol5QQ==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
@@ -1716,4 +1716,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_b58a6d98-d4be-41b5-bb23-4a7214d36979" Target="#_307a0b32-e5ba-4788-81fb-d04f937bf2d9"><Timestamp>2024-03-20 14:13:51</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_5fa0b6b5-0047-479c-95b4-d073142eab91" Target="#_46e45625-508f-494f-a9dc-d3ffed0531fb"><Timestamp>2024-03-20 14:14:22</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
