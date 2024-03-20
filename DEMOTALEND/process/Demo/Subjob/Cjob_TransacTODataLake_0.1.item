@@ -582,29 +582,6 @@
       <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" originalLength="-1" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="480" posY="928">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tJava_4"/>
-    <elementParameter field="MEMO_JAVA" name="CODE" value="System.out.println(&quot;SAMI DATA SUCCESFULLY SEND TO DATALAKE&quot;);"/>
-    <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" name="tJava_4"/>
-  </node>
-  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="480" posY="640">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tJava_5"/>
-    <elementParameter field="MEMO_JAVA" name="CODE" value="System.out.println(&quot;PEMI DATA SUCCESFULLY SEND TO DATALAKE&quot;);"/>
-    <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" name="tJava_5"/>
-  </node>
-  <node componentName="tDie" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="480" posY="800">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDie_4"/>
-    <elementParameter field="TEXT" name="MESSAGE" value="&quot;SubJob SendingDataToDataLake SAMI IS ERROR&quot;"/>
-    <elementParameter field="TEXT" name="CODE" value="4"/>
-    <elementParameter field="CLOSED_LIST" name="PRIORITY" value="5"/>
-    <elementParameter field="CHECK" name="EXIT_JVM" value="false"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" name="tDie_4"/>
-  </node>
   <node componentName="tSetGlobalVar" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="864" posY="1248">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tSetGlobalVar_2"/>
     <elementParameter field="TABLE" name="VARIABLES">
@@ -613,15 +590,6 @@
     </elementParameter>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tSetGlobalVar_2"/>
-  </node>
-  <node componentName="tDie" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="480" posY="1088">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDie_5"/>
-    <elementParameter field="TEXT" name="MESSAGE" value="&quot;SubJob SendingDataToDataLake SUAI IS ERROR&quot;"/>
-    <elementParameter field="TEXT" name="CODE" value="4"/>
-    <elementParameter field="CLOSED_LIST" name="PRIORITY" value="5"/>
-    <elementParameter field="CHECK" name="EXIT_JVM" value="false"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" name="tDie_5"/>
   </node>
   <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="672" posY="1248">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tJava_6"/>
@@ -1784,15 +1752,6 @@
       <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" originalLength="-1" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tDie" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="480" posY="512">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDie_3"/>
-    <elementParameter field="TEXT" name="MESSAGE" value="&quot;SubJob SendingDataToDataLake PEMI IS ERROR&quot;"/>
-    <elementParameter field="TEXT" name="CODE" value="4"/>
-    <elementParameter field="CLOSED_LIST" name="PRIORITY" value="5"/>
-    <elementParameter field="CHECK" name="EXIT_JVM" value="false"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" name="tDie_3"/>
-  </node>
   <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tPrejob_1" offsetLabelX="0" offsetLabelY="0" source="tPrejob_1" target="tDBConnection_1">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnComponentOk1"/>
   </connection>
@@ -1832,11 +1791,8 @@
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row1"/>
   </connection>
-  <connection connectorName="COMPONENT_ERROR" label="OnComponentError" lineStyle="5" metaname="tDBInput_2" offsetLabelX="0" offsetLabelY="0" source="tDBInput_2" target="tDie_4">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnComponentError4"/>
-  </connection>
-  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tDBInput_2" offsetLabelX="0" offsetLabelY="0" source="tDBInput_2" target="tJava_4">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnComponentOk8"/>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tDBInput_2" offsetLabelX="0" offsetLabelY="0" source="tDBInput_2" target="tJava_6">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnSubjobOk1"/>
   </connection>
   <connection connectorName="FLOW" label="SAMI_TRANSAC" lineStyle="10" mergeOrder="1" metaname="SAMI_TRANSAC" offsetLabelX="0" offsetLabelY="0" source="tMap_2" target="tUnite_1">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
@@ -1850,12 +1806,6 @@
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row2"/>
   </connection>
-  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tDBInput_1" offsetLabelX="0" offsetLabelY="0" source="tDBInput_1" target="tJava_5">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnComponentOk7"/>
-  </connection>
-  <connection connectorName="COMPONENT_ERROR" label="OnComponentError" lineStyle="5" metaname="tDBInput_1" offsetLabelX="0" offsetLabelY="0" source="tDBInput_1" target="tDie_3">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnComponentError3"/>
-  </connection>
   <connection connectorName="FLOW" label="PEMI_TRANSAC" lineStyle="10" mergeOrder="2" metaname="PEMI_TRANSAC" offsetLabelX="0" offsetLabelY="0" source="tMap_1" target="tUnite_1">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="PEMI_TRANSAC"/>
@@ -1863,12 +1813,6 @@
   <connection connectorName="FLOW" label="row3" lineStyle="0" metaname="tDBInput_3" offsetLabelX="0" offsetLabelY="0" source="tDBInput_3" target="tMap_3">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row3"/>
-  </connection>
-  <connection connectorName="COMPONENT_ERROR" label="OnComponentError" lineStyle="5" metaname="tDBInput_3" offsetLabelX="0" offsetLabelY="0" source="tDBInput_3" target="tDie_5">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnComponentError5"/>
-  </connection>
-  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tDBInput_3" offsetLabelX="0" offsetLabelY="0" source="tDBInput_3" target="tJava_6">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnComponentOk9"/>
   </connection>
   <connection connectorName="FLOW" label="SUAI" lineStyle="10" mergeOrder="3" metaname="SUAI" offsetLabelX="0" offsetLabelY="0" source="tMap_3" target="tUnite_1">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
@@ -1944,37 +1888,9 @@
   </subjob>
   <subjob>
     <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tJava_4"/>
-    <elementParameter field="TEXT" name="SUBJOB_TITLE" value="MSG"/>
-    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="128;255;0"/>
-    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
-  </subjob>
-  <subjob>
-    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tJava_5"/>
-    <elementParameter field="TEXT" name="SUBJOB_TITLE" value="MSG"/>
-    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="128;255;0"/>
-    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
-  </subjob>
-  <subjob>
-    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDie_4"/>
-    <elementParameter field="TEXT" name="SUBJOB_TITLE" value="ErrorMSG"/>
-    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="255;128;64"/>
-    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
-  </subjob>
-  <subjob>
-    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tSetGlobalVar_2"/>
     <elementParameter field="TEXT" name="SUBJOB_TITLE" value="SETGLOBALVARIABLE"/>
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="128;255;0"/>
-    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
-  </subjob>
-  <subjob>
-    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDie_5"/>
-    <elementParameter field="TEXT" name="SUBJOB_TITLE" value="ErrorMSG"/>
-    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="255;128;64"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
   <subjob>
@@ -1991,20 +1907,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="128;255;0"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-  <subjob>
-    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDie_3"/>
-    <elementParameter field="TEXT" name="SUBJOB_TITLE" value="ErrorMSG"/>
-    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="255;128;64"/>
-    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
-  </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_0f64c338-aeec-4612-a42c-ac5b351f0b47"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>I5i9USzqovi/fHjtw5IDhH73WAsfc/PI9dBUUNs1WS1BjGGHHtguSRJjno7JbTshlFN1lEX5lw5A&#13;
-h7RsqEBwDw==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_99536c52-460a-4d69-af71-265159e4fb24"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>7PSc34IYj3J4eaTbkGMBsjdhL6mVYWk6R7vxBLQdz+5jYKbjGkrz6TXU35+1pFYEwM8bnOOvYSgp&#13;
-CzVQZ7+j1w==</DigestValue></Reference></SignedInfo><SignatureValue>CZox3FYZHiilajVNLPzw6tnpA/Q+G0MiSDDrX8MT7JxP0Fk+bief9U2+mQJ5+8oZzP9AeJlmTxAy&#13;
-gYt5fQLK/gPkNkZCvtPUszxH3P2q4S0ZtJIthUA/rPk6os0vWXwZu6dfjq91dP/nZVnGJn2+XeK5&#13;
-aElArID3tstXYE/OMjhLTAbdpOWI9mslzSI5woW5eApKvH+vT9HTCjYb5Rl/r2NzPSbV1c2I+bGx&#13;
-W4DXT6Bfigc9Bk2mHGziCRrjMDn69cKN1blqq7zGBBGbYTnj0XE4upxLo55KpjtfzYD8t6cNvNCj&#13;
-fIpicpmnNAvutZ8jnQDJ8CbvqwpY/ZgIjO10rQ==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_de31abdc-3218-48e1-9617-a9c07fc78e3c"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>Ow+0pA2X1gGIl+lfCDT/7TGCZRURTJ4p1nuQmkZSeSZb4KmbcpPRlKfFk2i2cv9k2RHS46v9w7JB&#13;
+vUtjBWEUDw==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_0177e95c-13f9-48f0-a84c-159ce867bc49"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>QSLkBlSh1cADiMvOfH9vR/RnbxFk9c3usLegSSPXlg+y2hrEY5ZvAs/wDwqpe68XadBkc9u0CFHT&#13;
+Tuubzpo49Q==</DigestValue></Reference></SignedInfo><SignatureValue>o3gswwmuM999wxizRwK2VMfQhbi11c6sThx3ElpaTQ4gQVJZZ8j5MUKiuL7BSyw3XGLtI3xfqUcq&#13;
+57Vm8qKX0GJEmY3mPN902FpXfJ5T8yKJ6pEYfs+jH1gK/b2KkPSNfc4WCKg/6B9XAt91dFXQKCxN&#13;
+IJOFHHDiYf7CKiYkAideYjW/xxmAyUHs+ha1lD4eqPlQcrq3psKOIg5YdCoK1a2lw+uO7NVGVIfZ&#13;
+mH/NLstqoITWB9Txs67Zb9TgUhneXDCGY0KWpJPmFSaIgdOmGbEeFdGU7QdMCa5DO41yTKeSnwCE&#13;
+RjmMyHSgx2dtA6q9njrGmFfHTZnqPBN3bR6p0g==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
@@ -2026,4 +1935,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_99536c52-460a-4d69-af71-265159e4fb24" Target="#_0f64c338-aeec-4612-a42c-ac5b351f0b47"><Timestamp>2024-03-20 12:36:51</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_0177e95c-13f9-48f0-a84c-159ce867bc49" Target="#_de31abdc-3218-48e1-9617-a9c07fc78e3c"><Timestamp>2024-03-20 12:38:18</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
