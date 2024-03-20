@@ -1104,10 +1104,10 @@
       <column comment="" key="false" length="100" name="Affiliate" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="100" name="DATE_MONTH" nullable="true" pattern="&quot;MMM&quot;" precision="0" sourceType="VARCHAR" type="id_Date" usefulColumn="true">
+      <column comment="" key="false" length="20" name="DATE_MONTH" nullable="true" pattern="&quot;MMM&quot;" precision="0" sourceType="VARCHAR" type="id_Date" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="100" name="Date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="VARCHAR" type="id_Date" usefulColumn="true">
+      <column comment="" key="false" length="20" name="Date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="VARCHAR" type="id_Date" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
       <column comment="" key="false" length="100" name="Carline" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
@@ -1371,10 +1371,10 @@
       <column comment="" key="false" length="100" name="Affiliate" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="100" name="DATE_MONTH" nullable="true" pattern="&quot;MMM&quot;" precision="0" sourceType="VARCHAR" type="id_Date" usefulColumn="true">
+      <column comment="" key="false" length="20" name="DATE_MONTH" nullable="true" pattern="&quot;MMM&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="100" name="Date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="VARCHAR" type="id_Date" usefulColumn="true">
+      <column comment="" key="false" length="20" name="Date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
       <column comment="" key="false" length="100" name="Carline" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
@@ -1434,10 +1434,10 @@
       <column comment="" key="false" length="100" name="Affiliate" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="100" name="DATE_MONTH" nullable="true" pattern="&quot;MMM&quot;" precision="0" sourceType="VARCHAR" type="id_Date" usefulColumn="true">
+      <column comment="" key="false" length="20" name="DATE_MONTH" nullable="true" pattern="&quot;MMM&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="100" name="Date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="VARCHAR" type="id_Date" usefulColumn="true">
+      <column comment="" key="false" length="20" name="Date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
       <column comment="" key="false" length="100" name="Carline" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
@@ -1670,13 +1670,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_5be8409b-931c-496c-a45c-11518e4f688e"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>VstbY1KkoRqYMWzjfAcreO6ei26z9RyDAbvyGJFODBoD6RXSePUIGRfVIfH/pweQE2kstiV5G9hJ&#13;
-7wBz3VEg3g==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_3cf32a54-95da-4e4d-b678-7a685517e6e5"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>Xc5E+30yHHaCNdGbzsXdGMNli8cnfEU8fKOuBjd15HeG5AMi1PIhbvelNXz7q0qL/DkS1NBiA26R&#13;
-M1qpcmTI9A==</DigestValue></Reference></SignedInfo><SignatureValue>UQEbR1SpFFKaRR+n96c9ePRBYzbDC8qqV9cB6CZeIYTzKL5wVaYelf/fna+lyM6fhiDsPnik7nix&#13;
-UHOM2J6ifap2YHnnq5zf+ns3Dlr5L/uuRU82t9cYA3MnrOUD0BMxA6GBt1fmqck7BpeuAjdWGUQ0&#13;
-V9xN+ZrnlvrFOAtrAffiiWUyO4FvA1m8o05yWGZqM+gAuGy7BX6BtV2wXjZfrJyN8a1/54m3E93T&#13;
-N93++5nwKquUxDFsCO+UtJa5DWH/fUs8zZMyn41vq9QoIx+yRp9SErWa7M6bcJKOvb1BLYm7En4N&#13;
-xIygYflpTx0GH7pc9q3cg1o7/4QLfFq9ZY3S/A==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_f59bb4dc-e79b-4112-b014-f9cc1e4d65f6"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>BbV3cBlwB/ME2H5qceBz7MO4MMR2Rmc0eGMdFp5BTNqQo6u50yQA5MNFw9XlPPZr7BYXzGvVZaCY&#13;
++RD5lbXtdA==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_8dc76c02-1cec-4bd4-917d-570ecb8cf68e"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>ltpdgluriBInMOL55StlilCZ+ycDfjgwBGiH37vr2Gpa/PQfyYefJYOdIZj/C/rZ0IFzI8JsTo/M&#13;
++gM+8/nGKQ==</DigestValue></Reference></SignedInfo><SignatureValue>VDwSvi2ep7FTWpj/FwSEdYEVjx+x7Chp3ZY3khrtumo/LhwfPQwQRY8E6lvz5wumyJf69rgJtPWo&#13;
+OrLxZWFgjWJZKf9vY3XHbrs+M1lckHoDsi0FVeAAwlIvYvQWyf3OHpJce45arHnMMO7GmrQE5g5E&#13;
+mU4mYO1xmqSIqBr2/jR8v09jVjsY1V9MuQAyKxQTfy+fkhGOjiEng7gaYBB85pH7Ku3+U/ITwgVb&#13;
+nznQlQDhRZIpKYm2scdzLooTYW4LkZEnzzU/wzoE0aHU0N5p1MJ7lD5gVaj8q/hYlEvVS3kCKkEm&#13;
+wwV/iNQ1bGDtr0LCEEqbzHcyfweZJCtm48yHpA==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
@@ -1698,4 +1698,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_3cf32a54-95da-4e4d-b678-7a685517e6e5" Target="#_5be8409b-931c-496c-a45c-11518e4f688e"><Timestamp>2024-03-20 12:59:10</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_8dc76c02-1cec-4bd4-917d-570ecb8cf68e" Target="#_f59bb4dc-e79b-4112-b014-f9cc1e4d65f6"><Timestamp>2024-03-20 12:59:57</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
