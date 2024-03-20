@@ -1107,7 +1107,7 @@
       <column comment="" key="false" length="100" name="DATE_MONTH" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="100" name="Date" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+      <column comment="" key="false" length="100" name="Date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="VARCHAR" type="id_Date" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
       <column comment="" key="false" length="100" name="Carline" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
@@ -1169,7 +1169,7 @@
       <outputTables name="out1" sizeState="INTERMEDIATE">
         <mapperTableEntries expression="row4.Affiliate " name="Affiliate" nullable="true" type="id_String"/>
         <mapperTableEntries expression="row4.DATE_MONTH " name="DATE_MONTH" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="TalendDate.parseDate(&quot;EEE MMM dd HH:mm:ss zzz yyyy&quot;, row4.Date); " name="Date" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="TalendDate.parseDate(&quot;EEE MMM dd HH:mm:ss zzz yyyy&quot;, row4.Date); " name="Date" nullable="true" type="id_Date"/>
         <mapperTableEntries expression="row4.Carline " name="Carline" nullable="true" type="id_String"/>
         <mapperTableEntries expression="row4.Family " name="Family" nullable="true" type="id_String"/>
         <mapperTableEntries expression="row4.Assembly_Number " name="Assembly_Number" nullable="true" type="id_String"/>
@@ -1374,7 +1374,7 @@
       <column comment="" key="false" length="100" name="DATE_MONTH" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="100" name="Date" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+      <column comment="" key="false" length="100" name="Date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="VARCHAR" type="id_Date" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
       <column comment="" key="false" length="100" name="Carline" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
@@ -1428,7 +1428,7 @@
       <column comment="" key="false" length="100" name="Rework_time_fix_min" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="100" name="Updated_by" nullable="true" originalLength="100" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="Updated_by" nullable="true" originalLength="100" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
     </metadata>
     <metadata connector="REJECT" name="REJECT">
       <column comment="" key="false" length="100" name="Affiliate" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
@@ -1437,7 +1437,7 @@
       <column comment="" key="false" length="100" name="DATE_MONTH" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="100" name="Date" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+      <column comment="" key="false" length="100" name="Date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="VARCHAR" type="id_Date" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
       <column comment="" key="false" length="100" name="Carline" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
@@ -1491,7 +1491,7 @@
       <column comment="" key="false" length="100" name="Rework_time_fix_min" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="100" name="Updated_by" nullable="true" originalLength="100" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="Updated_by" nullable="true" originalLength="100" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
       <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" originalLength="-1" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" originalLength="-1" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
     </metadata>
@@ -1670,13 +1670,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_18c8ca8a-419f-4aa3-a7cb-bb5393aceda7"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>7Z/VkP8wdBBpb5IfO9zShOcyb8YoaSjfVNVhZYacHZYWX7Rm1WSElePb9LxtKidqSrlJ70vZp1V8&#13;
-MWxIBmjtRA==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_1e48d190-fa9e-45a0-b26a-886c3948dc46"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>LUpypfoSA7gkmwzMXkOrHa8ui4nSuJKnBoEAP2h1zWTm8ZYucfq5yVZO6a5C1VP59HBkmqJ6tOHm&#13;
-n/tMV2x+1g==</DigestValue></Reference></SignedInfo><SignatureValue>MiEeqDaefJ+xfpMi2AIW52aYETP03t8TMdHSwxTkk29g2/sl9pXlEcllMPrh0es0w/UQZZbzvsM8&#13;
-9j6vp9krSYpmVf7xkaaKb1rxrpqtBORx865Y7dZa/rkYXe4S5wopYDS8UmifRhUwh58+xC3SNoHa&#13;
-drOIjeV0dv77nNp1qnzkhNRlsfhZQ16CcumqE/32/Ri1Wm20C+D/Mdd5PFmfOpm24aGQ/IepmVZ3&#13;
-pXgldLoRMGSP6NBzyjAW7pKS1OrAS7U6N/oVsh9RoPT5yKAgk0dlXGN1FD76l1vIBD4P6UkrFWyQ&#13;
-nLctPvD72y/Rgo/ZBgZX03Df/0EXMjbHjjsRPw==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_9653bfff-a543-4ac2-9bfc-d3a5fb2b2299"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>D9MIhVXX/4G1A+GJIgNOrJgFKtNRsYdvsfvtkULJym4BQ8FXvVIn8zRUPCH+9PXU9dyf2p+F0uRA&#13;
+GcFLJ1/6Fg==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_8037712e-0912-46d7-9480-807298ccee5e"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>x8THBC4xicc8+Lj7icym511vA4fC/veFM52QpwPcadIMalq/oVTtYzSUZXjW24xmG0CsqD3KrAuU&#13;
+DbCm2qvnbA==</DigestValue></Reference></SignedInfo><SignatureValue>dR/OfRpvXWpW0r6ezOKhHVWVMGq6d5HHyFO8tcHbo4e7AyXapRUeQSUO8Yk4sibvzfZ9t0YHJYyp&#13;
+6kVKBIwqGv+YNGzGismjj0550XR8Co++62vIpYgK/k/59Iwq5GKgDp5RFXheCEInw6V4cLRWbDf3&#13;
+v0gaEIv+So+j0BzBcnuwrxDtW3ecBtoBQk8dmHl/gIORVcwh5ukZzLhaChFXhTsfFq7gdcfQovT0&#13;
+GchzCv1zQyTsL6qraOsq2KnFgzl/85y+D7sU9oypdPgltNd0hmrI3GotCxw33m20O6QexmTSwUWG&#13;
+1CFLSzKoGK5brcCd+lArY49Z2TNuVQ7peOfEAw==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
@@ -1698,4 +1698,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_1e48d190-fa9e-45a0-b26a-886c3948dc46" Target="#_18c8ca8a-419f-4aa3-a7cb-bb5393aceda7"><Timestamp>2024-03-20 12:54:39</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_8037712e-0912-46d7-9480-807298ccee5e" Target="#_9653bfff-a543-4ac2-9bfc-d3a5fb2b2299"><Timestamp>2024-03-20 12:54:55</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
