@@ -643,7 +643,7 @@
     <elementParameter field="EXTERNAL" name="MAP" value=""/>
     <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
     <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
-    <elementParameter field="IMAGE" name="PREVIEW" value="_lPD1YL_7Ee6bId7J9CaXAQ-tMap_1-PREVIEW.bmp"/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_KIVD0Oa3Ee6SdIR6GcQYUQ-tMap_1-PREVIEW.bmp"/>
     <elementParameter field="CHECK" name="DIE_ON_ERROR" show="false" value="true"/>
     <elementParameter field="CHECK" name="LKUP_PARALLELIZE" show="false" value="false"/>
     <elementParameter field="TEXT" name="LEVENSHTEIN" show="false" value="0"/>
@@ -770,7 +770,7 @@
     <elementParameter field="EXTERNAL" name="MAP" value=""/>
     <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
     <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
-    <elementParameter field="IMAGE" name="PREVIEW" value="_lPD1YL_7Ee6bId7J9CaXAQ-tMap_2-PREVIEW.bmp"/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_KIVD0Oa3Ee6SdIR6GcQYUQ-tMap_2-PREVIEW.bmp"/>
     <elementParameter field="CHECK" name="DIE_ON_ERROR" show="false" value="true"/>
     <elementParameter field="CHECK" name="LKUP_PARALLELIZE" show="false" value="false"/>
     <elementParameter field="TEXT" name="LEVENSHTEIN" show="false" value="0"/>
@@ -964,7 +964,7 @@
     <elementParameter field="EXTERNAL" name="MAP" value=""/>
     <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
     <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
-    <elementParameter field="IMAGE" name="PREVIEW" value="_lPD1YL_7Ee6bId7J9CaXAQ-tMap_3-PREVIEW.bmp"/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_KIVD0Oa3Ee6SdIR6GcQYUQ-tMap_3-PREVIEW.bmp"/>
     <elementParameter field="CHECK" name="DIE_ON_ERROR" show="false" value="true"/>
     <elementParameter field="CHECK" name="LKUP_PARALLELIZE" show="false" value="false"/>
     <elementParameter field="TEXT" name="LEVENSHTEIN" show="false" value="0"/>
@@ -1086,21 +1086,28 @@
       </inputTables>
     </nodeData>
   </node>
-  <node componentName="tConvertType" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1120" posY="800">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tConvertType_1"/>
-    <elementParameter field="CHECK" name="AUTOCAST" value="true"/>
-    <elementParameter field="TABLE" name="MANUALTABLE" show="false"/>
-    <elementParameter field="CHECK" name="EMPTYTONULL" value="false"/>
-    <elementParameter field="CHECK" name="DIEONERROR" value="false"/>
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="1120" posY="800">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tMap_4"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
+    <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_KIVD0Oa3Ee6SdIR6GcQYUQ-tMap_4-PREVIEW.bmp"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" show="false" value="true"/>
+    <elementParameter field="CHECK" name="LKUP_PARALLELIZE" show="false" value="false"/>
+    <elementParameter field="TEXT" name="LEVENSHTEIN" show="false" value="0"/>
+    <elementParameter field="TEXT" name="JACCARD" show="false" value="0"/>
+    <elementParameter field="CHECK" name="ENABLE_AUTO_CONVERT_TYPE" show="false" value="false"/>
+    <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
+    <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="true"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" name="tConvertType_1">
+    <metadata name="out1">
       <column comment="" key="false" length="100" name="Affiliate" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
       <column comment="" key="false" length="100" name="DATE_MONTH" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="20" name="Date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="VARCHAR" type="id_Date" usefulColumn="true">
+      <column comment="" key="false" length="100" name="Date" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
       <column comment="" key="false" length="100" name="Carline" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
@@ -1154,85 +1161,111 @@
       <column comment="" key="false" length="100" name="Rework_time_fix_min" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="100" name="Updated_by" nullable="true" originalLength="100" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="Updated_by" nullable="true" originalLength="100" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
     </metadata>
-    <metadata connector="REJECT" name="REJECT">
-      <column comment="" key="false" length="100" name="Affiliate" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="100" name="DATE_MONTH" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="20" name="Date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="VARCHAR" type="id_Date" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="100" name="Carline" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="100" name="Family" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="100" name="Assembly_Number" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="100" name="Defect_Description" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="100" name="QTY" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="100" name="Defect_Discovery_Area" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="100" name="_M_Change" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="100" name="Shift_Opt" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="100" name="shift" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="100" name="Defect_Location" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="100" name="conveyor_type" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="100" name="Spesification" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="100" name="Actual" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="100" name="Task_Process" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="100" name="Time" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="100" name="Rework_Time" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="100" name="Rework_time_fix_min" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="100" name="Updated_by" nullable="true" originalLength="100" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
-      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
-    </metadata>
+    <nodeData xsi:type="TalendMapper:MapperData">
+      <uiProperties shellMaximized="true"/>
+      <varTables minimized="true" name="Var" sizeState="INTERMEDIATE"/>
+      <outputTables name="out1" sizeState="INTERMEDIATE">
+        <mapperTableEntries expression="row4.Affiliate " name="Affiliate" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row4.DATE_MONTH " name="DATE_MONTH" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="TalendDate.parseDate(&quot;yyyy-MM-dd'T'hh:mm:ss z&quot;, row4.Date); " name="Date" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row4.Carline " name="Carline" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row4.Family " name="Family" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row4.Assembly_Number " name="Assembly_Number" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row4.Defect_Description " name="Defect_Description" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row4.QTY " name="QTY" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row4.Defect_Discovery_Area " name="Defect_Discovery_Area" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row4._M_Change " name="_M_Change" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row4.Shift_Opt " name="Shift_Opt" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row4.shift " name="shift" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row4.Defect_Location " name="Defect_Location" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row4.conveyor_type " name="conveyor_type" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row4.Spesification " name="Spesification" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row4.Actual " name="Actual" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row4.Task_Process " name="Task_Process" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row4.Time " name="Time" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row4.Rework_Time " name="Rework_Time" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row4.Rework_time_fix_min " name="Rework_time_fix_min" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row4.Updated_by " name="Updated_by" nullable="true" type="id_String"/>
+      </outputTables>
+      <inputTables lookupMode="LOAD_ONCE" matchingMode="UNIQUE_MATCH" name="row4" sizeState="INTERMEDIATE">
+        <mapperTableEntries name="Affiliate" nullable="true" type="id_String"/>
+        <mapperTableEntries name="DATE_MONTH" nullable="true" type="id_String"/>
+        <mapperTableEntries name="Date" nullable="true" type="id_String"/>
+        <mapperTableEntries name="Carline" nullable="true" type="id_String"/>
+        <mapperTableEntries name="Family" nullable="true" type="id_String"/>
+        <mapperTableEntries name="Assembly_Number" nullable="true" type="id_String"/>
+        <mapperTableEntries name="Defect_Description" nullable="true" type="id_String"/>
+        <mapperTableEntries name="QTY" nullable="true" type="id_String"/>
+        <mapperTableEntries name="Defect_Discovery_Area" nullable="true" type="id_String"/>
+        <mapperTableEntries name="_M_Change" nullable="true" type="id_String"/>
+        <mapperTableEntries name="Shift_Opt" nullable="true" type="id_String"/>
+        <mapperTableEntries name="shift" nullable="true" type="id_String"/>
+        <mapperTableEntries name="Defect_Location" nullable="true" type="id_String"/>
+        <mapperTableEntries name="conveyor_type" nullable="true" type="id_String"/>
+        <mapperTableEntries name="Spesification" nullable="true" type="id_String"/>
+        <mapperTableEntries name="Actual" nullable="true" type="id_String"/>
+        <mapperTableEntries name="Task_Process" nullable="true" type="id_String"/>
+        <mapperTableEntries name="Time" nullable="true" type="id_String"/>
+        <mapperTableEntries name="Rework_Time" nullable="true" type="id_String"/>
+        <mapperTableEntries name="Rework_time_fix_min" nullable="true" type="id_String"/>
+        <mapperTableEntries name="Updated_by" nullable="true" type="id_String"/>
+      </inputTables>
+    </nodeData>
+  </node>
+  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="352" posY="1280">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tJava_3"/>
+    <elementParameter field="MEMO_JAVA" name="CODE" value="System.out.println(&quot;SUAI DATA SUCCESFULLY SEND TO DATALAKE&quot;);"/>
+    <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tJava_3"/>
+  </node>
+  <node componentName="tSendMail" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="352" posY="1408">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tSendMail_1"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
+    <elementParameter field="TEXT" name="TO" value="context.RECIPIENTMAIL"/>
+    <elementParameter field="TEXT" name="FROM" value="context.SMTPMAIL"/>
+    <elementParameter field="CHECK" name="NEED_PERSONAL_NAME" value="true"/>
+    <elementParameter field="TEXT" name="PERSONAL_NAME" value="&quot;Talend Admistrator&quot;"/>
+    <elementParameter field="TEXT" name="CC" value=""/>
+    <elementParameter field="TEXT" name="BCC" value=""/>
+    <elementParameter field="TEXT" name="SUBJECT" value="&quot;Talend Data Fabric Notification&quot;"/>
+    <elementParameter field="MEMO_MESSAGE" name="MESSAGE" value="&quot;this ETL Job &quot; + (String) globalMap.get(&quot;jobname&quot;) + &quot; is running successfully\n&quot; +&#13;&#10;    &quot;The Job started at &quot; + ((Date) globalMap.get(&quot;StartTime&quot;)) + &quot; and ended at &quot; + ((Date) globalMap.get(&quot;EndTime&quot;)) + &quot;\n&quot; + &#13;&#10;      &quot;Data Insert to DataLake Successfully&quot;"/>
+    <elementParameter field="CHECK" name="CHECK_ATTACHMENT" value="true"/>
+    <elementParameter field="TABLE" name="ATTACHMENTS"/>
+    <elementParameter field="TABLE" name="HEADERS"/>
+    <elementParameter field="TEXT" name="SMTP_HOST" value="&quot;smtp-mail.outlook.com&quot;"/>
+    <elementParameter field="TEXT" name="SMTP_PORT" value="&quot;587&quot;"/>
+    <elementParameter field="CHECK" name="SSL" value="false"/>
+    <elementParameter field="CHECK" name="STARTTLS" value="true"/>
+    <elementParameter field="CLOSED_LIST" name="IMPORTANCE" value="Normal"/>
+    <elementParameter field="CLOSED_LIST" name="AUTH_MODE" value="BASIC"/>
+    <elementParameter field="TEXT" name="AUTH_USERNAME" value="context.SMTPMAIL"/>
+    <elementParameter field="PASSWORD" name="AUTH_PASSWORD" value="enc:system.encryption.key.v1:0Gj+zWcJvgvweya5rlLvLLgwWNVA1sBHF343D/zuTbxYtiA942pDFN/5oj3/kNH5"/>
+    <elementParameter field="PASSWORD" name="TOKEN" show="false" value="enc:system.encryption.key.v1:mAraQFNlt1IlJm6DMbCzFk6H3IOLo/jWdVPyooLyH3wO07xKmPk="/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true"/>
+    <elementParameter field="CLOSED_LIST" name="TEXT_SUBTYPE" value="plain"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="SET_LOCALHOST" value="false"/>
+    <elementParameter field="TEXT" name="LOCALHOST" show="false" value="&quot;localhost&quot;"/>
+    <elementParameter field="CHECK" name="USE_TWO_LINE_TOKEN" show="false" value="false"/>
+    <elementParameter field="TABLE" name="CONFIGS"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tSendMail_1"/>
+  </node>
+  <node componentName="tSetGlobalVar" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="544" posY="1280">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tSetGlobalVar_2"/>
+    <elementParameter field="TABLE" name="VARIABLES">
+      <elementValue elementRef="KEY" value="&quot;EndTime&quot;"/>
+      <elementValue elementRef="VALUE" value="TalendDate.getCurrentDate()"/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tSetGlobalVar_2"/>
   </node>
   <node componentName="tMSSqlOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="1280" posY="800">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBOutput_1"/>
-    <elementParameter field="TEXT" name="COMPONENT_NAME" show="false" value="tMSSqlOutput"/>
-    <elementParameter field="TEXT" name="VERSION" show="false" value="0.102 (ALPHA)"/>
-    <elementParameter field="TEXT" name="FAMILY" show="false" value="Databases/DB Specifics/MS_SQL_Server"/>
-    <elementParameter field="CHECK" name="STARTABLE" show="false" value="false"/>
-    <elementParameter field="CHECK" name="SUBTREE_START" show="false" value="false"/>
-    <elementParameter field="CHECK" name="END_OF_FLOW" show="false" value="true"/>
-    <elementParameter field="TEXT" name="HELP" show="false" value="org.talend.help.tMSSqlOutput"/>
-    <elementParameter field="DIRECTORY" name="IREPORT_PATH" show="false" value=""/>
-    <elementParameter field="DIRECTORY" name="JAVA_LIBRARY_PATH" show="false" value="C:\Program Files (x86)\Talend-Studio\studio\configuration\lib\java"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value="_nLIi0LwREe6kFdszHmB07A"/>
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
@@ -1513,56 +1546,6 @@
       <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" originalLength="-1" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="352" posY="1280">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tJava_3"/>
-    <elementParameter field="MEMO_JAVA" name="CODE" value="System.out.println(&quot;SUAI DATA SUCCESFULLY SEND TO DATALAKE&quot;);"/>
-    <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" name="tJava_3"/>
-  </node>
-  <node componentName="tSendMail" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="352" posY="1408">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tSendMail_1"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
-    <elementParameter field="TEXT" name="TO" value="context.RECIPIENTMAIL"/>
-    <elementParameter field="TEXT" name="FROM" value="context.SMTPMAIL"/>
-    <elementParameter field="CHECK" name="NEED_PERSONAL_NAME" value="true"/>
-    <elementParameter field="TEXT" name="PERSONAL_NAME" value="&quot;Talend Admistrator&quot;"/>
-    <elementParameter field="TEXT" name="CC" value=""/>
-    <elementParameter field="TEXT" name="BCC" value=""/>
-    <elementParameter field="TEXT" name="SUBJECT" value="&quot;Talend Data Fabric Notification&quot;"/>
-    <elementParameter field="MEMO_MESSAGE" name="MESSAGE" value="&quot;this ETL Job &quot; + (String) globalMap.get(&quot;jobname&quot;) + &quot; is running successfully\n&quot; +&#13;&#10;    &quot;The Job started at &quot; + ((Date) globalMap.get(&quot;StartTime&quot;)) + &quot; and ended at &quot; + ((Date) globalMap.get(&quot;EndTime&quot;)) + &quot;\n&quot; + &#13;&#10;      &quot;Data Insert to DataLake Successfully&quot;"/>
-    <elementParameter field="CHECK" name="CHECK_ATTACHMENT" value="true"/>
-    <elementParameter field="TABLE" name="ATTACHMENTS"/>
-    <elementParameter field="TABLE" name="HEADERS"/>
-    <elementParameter field="TEXT" name="SMTP_HOST" value="&quot;smtp-mail.outlook.com&quot;"/>
-    <elementParameter field="TEXT" name="SMTP_PORT" value="&quot;587&quot;"/>
-    <elementParameter field="CHECK" name="SSL" value="false"/>
-    <elementParameter field="CHECK" name="STARTTLS" value="true"/>
-    <elementParameter field="CLOSED_LIST" name="IMPORTANCE" value="Normal"/>
-    <elementParameter field="CLOSED_LIST" name="AUTH_MODE" value="BASIC"/>
-    <elementParameter field="TEXT" name="AUTH_USERNAME" value="context.SMTPMAIL"/>
-    <elementParameter field="PASSWORD" name="AUTH_PASSWORD" value="enc:system.encryption.key.v1:0Gj+zWcJvgvweya5rlLvLLgwWNVA1sBHF343D/zuTbxYtiA942pDFN/5oj3/kNH5"/>
-    <elementParameter field="PASSWORD" name="TOKEN" show="false" value="enc:system.encryption.key.v1:mAraQFNlt1IlJm6DMbCzFk6H3IOLo/jWdVPyooLyH3wO07xKmPk="/>
-    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true"/>
-    <elementParameter field="CLOSED_LIST" name="TEXT_SUBTYPE" value="plain"/>
-    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
-    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
-    <elementParameter field="CHECK" name="SET_LOCALHOST" value="false"/>
-    <elementParameter field="TEXT" name="LOCALHOST" show="false" value="&quot;localhost&quot;"/>
-    <elementParameter field="CHECK" name="USE_TWO_LINE_TOKEN" show="false" value="false"/>
-    <elementParameter field="TABLE" name="CONFIGS"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" name="tSendMail_1"/>
-  </node>
-  <node componentName="tSetGlobalVar" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="544" posY="1280">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tSetGlobalVar_2"/>
-    <elementParameter field="TABLE" name="VARIABLES">
-      <elementValue elementRef="KEY" value="&quot;EndTime&quot;"/>
-      <elementValue elementRef="VALUE" value="TalendDate.getCurrentDate()"/>
-    </elementParameter>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" name="tSetGlobalVar_2"/>
-  </node>
   <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tPrejob_1" offsetLabelX="0" offsetLabelY="0" source="tPrejob_1" target="tDBConnection_1">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnComponentOk1"/>
   </connection>
@@ -1607,17 +1590,13 @@
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="SAMI_TRANSAC"/>
   </connection>
-  <connection connectorName="FLOW" label="row4" lineStyle="0" metaname="tUnite_1" offsetLabelX="0" offsetLabelY="0" source="tUnite_1" target="tConvertType_1">
+  <connection connectorName="FLOW" label="row4" lineStyle="0" metaname="tUnite_1" offsetLabelX="0" offsetLabelY="0" source="tUnite_1" target="tMap_4">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row4"/>
   </connection>
   <connection connectorName="FLOW" label="SUAI" lineStyle="10" mergeOrder="3" metaname="SUAI" offsetLabelX="0" offsetLabelY="0" source="tMap_3" target="tUnite_1">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="SUAI"/>
-  </connection>
-  <connection connectorName="FLOW" label="row5" lineStyle="0" metaname="tConvertType_1" offsetLabelX="0" offsetLabelY="0" source="tConvertType_1" target="tDBOutput_1">
-    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row5"/>
   </connection>
   <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tJava_3" offsetLabelX="0" offsetLabelY="0" source="tJava_3" target="tSetGlobalVar_2">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnComponentOk6"/>
@@ -1687,13 +1666,18 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_2fb342bc-01ac-4a48-b3df-cbfdb809e219"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>Oa/NtIXGFqh27yvKzPNNt+Egu8Ju+ewMsPHuhXZPMPX9rtNIqAFe1OfCIhFgKLSGOZajTqdhJlnE&#13;
-XrcTGQ24eg==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_05be3741-e843-4a89-84af-1771f0bf607d"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>NjbqHJD0VdqBl+4ti6ykJOml7nDlHa69Pq29wN3IPBZOzthuAn1PcnzJ8EFOKkiARQ+AonZALSq3&#13;
-u1zPMWVRSA==</DigestValue></Reference></SignedInfo><SignatureValue>Kwr9zQCSGFQRVyeKCCNHx5Bo4iRLrT5P+rrLOsbY2LoNI46plNG/8MSPVWmmF8VgarPPQz7tqCeQ&#13;
-qdj6z/r1FJnZqCAARkKN6POVVnOCIozMS6AuF5zKmB7BrMxqjh1/Lr78+np528OTZS23EXOPlFfa&#13;
-otDeZ6OuXmVZ4gH10HNHTL7WDeeU6vjLX6frvFEx0FfZNkIhv7eu10RVFPUJFl84y4QkOJRmAFHy&#13;
-QPvek1dC93rp+A/lGd7pExMN0V6GujQ1a7O4TEBn+S0xBUU7n1idtCY4bRJq7qgJCFjA7Fwjvq5P&#13;
-dMZ3cqz8acnlCGOIE9PjohvVOe59Z1RjAgjxTQ==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBOutput_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_47b8d19e-2c11-4445-8ebe-ce70cc7ce1ee"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>o8/hE8fDnO2T5aXFj82jL0oI1QTLJfFwmmyMrm/9M3hdYSQ1/DB1F/dExapp/m1cm30sC8Y8/ivG&#13;
+/+UyCUEt7w==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_ec0ab768-7af6-4238-94c9-671972976edf"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>gO9q4kPBhmfXZ5Fgtx9zpZm9moz9pFSSyLdtoBmYnkmbeTYyFTs3m5eCb1oM0l9kOIVM+96CKysQ&#13;
+5g81kQcuSw==</DigestValue></Reference></SignedInfo><SignatureValue>RzBftS+kEf6DgGt+ZfQb+BYMiFv+QHy0FUDaandxFvd4SArmm47B/ByZCpXYQa/YqOX5Ophzp99P&#13;
+gWnD3qlVQAQgN0yssR2H5ynaafBRjqhaS0zV2KtJEd97Ke6MN21Enax5Yzd1vtttaXcBESYb1B7p&#13;
+p2XeHe1fgaCm6hw9jA6wwjWDBRqhR2q1jgPfmiUgIn+8WG2F+T0tniKgZMAoC511ZfwVefhA5pTd&#13;
+imWDAS3e5kx2HNy4wFbUsCw9TooD8DZW+kvDd7qELvfCAwYePQICJ5nU9ij9ppNn/abQR1hmpiFP&#13;
+q3YIb4sMAwnhuW2pxfSu1liFj4kEjnO+cTlkmw==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
@@ -1715,4 +1699,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_05be3741-e843-4a89-84af-1771f0bf607d" Target="#_2fb342bc-01ac-4a48-b3df-cbfdb809e219"><Timestamp>2024-03-20 12:48:54</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_ec0ab768-7af6-4238-94c9-671972976edf" Target="#_47b8d19e-2c11-4445-8ebe-ce70cc7ce1ee"><Timestamp>2024-03-20 12:54:24</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
