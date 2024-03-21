@@ -47,5 +47,30 @@
       "id" : "_kqm_Qr5gEe64zsK5-QO0CQ",
       "name" : "MariaDB_Database"
     } ]
+  }, {
+    "contextName" : "Default",
+    "repoId" : "_C6G4QOcoEe6SdIR6GcQYUQ",
+    "parameterList" : [ {
+      "id" : "_C7Nrh-coEe6SdIR6GcQYUQ",
+      "name" : "DataLake_Login"
+    }, {
+      "id" : "_C7NrhecoEe6SdIR6GcQYUQ",
+      "name" : "DataLake_Schema"
+    }, {
+      "id" : "_C7NrgucoEe6SdIR6GcQYUQ",
+      "name" : "DataLake_Server"
+    }, {
+      "id" : "_C7NrgecoEe6SdIR6GcQYUQ",
+      "name" : "DataLake_Database"
+    }, {
+      "id" : "_C7NrhucoEe6SdIR6GcQYUQ",
+      "name" : "DataLake_Password"
+    }, {
+      "id" : "_C7Nrg-coEe6SdIR6GcQYUQ",
+      "name" : "DataLake_AdditionalParams"
+    }, {
+      "id" : "_C7NrhOcoEe6SdIR6GcQYUQ",
+      "name" : "DataLake_Port"
+    } ]
   } ]
 }
