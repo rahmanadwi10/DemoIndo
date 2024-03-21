@@ -890,7 +890,7 @@
       <column comment="" key="false" length="100" name="Affiliate" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="20" name="DATE_MONTH" nullable="true" pattern="&quot;MMMM&quot;" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+      <column comment="" key="false" length="100" name="DATE_MONTH" nullable="true" pattern="&quot;MMMM&quot;" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
       <column comment="" key="false" length="20" name="Date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="VARCHAR" type="id_Date" usefulColumn="true">
@@ -1303,7 +1303,7 @@
     <elementParameter field="TEXT" name="USER" value="context.DataLake_Login"/>
     <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:YlkoSSHbGZot5ohMhDyrByATZ6O5FiH2EVW3W8glQvcH/dw1uFo81Iu1PhQbslyjXidD4yY="/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;DATALAKE_TRANSAC&quot;"/>
-    <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="CREATE_IF_NOT_EXISTS"/>
+    <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="DROP_IF_EXISTS_AND_CREATE"/>
     <elementParameter field="CLOSED_LIST" name="DATA_ACTION" value="INSERT"/>
     <elementParameter field="CHECK" name="USE_SPATIAL_OPTIONS" value="false"/>
     <elementParameter field="CHECK" name="SPATIAL_INDEX" show="false" value="false"/>
@@ -1440,10 +1440,10 @@
       <column comment="" key="false" length="100" name="Affiliate" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="20" name="DATE_MONTH" nullable="true" pattern="&quot;MMMM&quot;" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+      <column comment="" key="false" length="100" name="DATE_MONTH" nullable="true" pattern="&quot;MMMM&quot;" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="20" name="Date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+      <column comment="" key="false" length="20" name="Date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="VARCHAR" type="id_Date" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
       <column comment="" key="false" length="100" name="Carline" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
@@ -1503,10 +1503,10 @@
       <column comment="" key="false" length="100" name="Affiliate" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="20" name="DATE_MONTH" nullable="true" pattern="&quot;MMMM&quot;" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+      <column comment="" key="false" length="100" name="DATE_MONTH" nullable="true" pattern="&quot;MMMM&quot;" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="20" name="Date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+      <column comment="" key="false" length="20" name="Date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="VARCHAR" type="id_Date" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
       <column comment="" key="false" length="100" name="Carline" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
@@ -1799,13 +1799,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_d2020ae0-3117-4644-acc3-40012e8eae8f"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>YXzg3bbhCV+LERSPSNHhklIiNue3gQv8u2j2Zc4gTp8+FJaw1z4qphc3UWd75p+mw3ga/SblZXIF&#13;
-scC8rX26BA==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_eab5d17c-4317-46f3-a383-55add89af93c"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>SaQndIoeMScGribqreFvhzgc7XKwsphOY4yzYygPAJTmzbF0NBgkG1Sp0Hvc8oAXghFhppT3cSD2&#13;
-Pq8L42praw==</DigestValue></Reference></SignedInfo><SignatureValue>EmIz9WWog0f8W+LetoF4YVofRpWunPmIrQg0wW7l2v0PXjiYEKGirdkcSfY0pUD2uUe76VEd5uRo&#13;
-ifBzq0CTzzRfcFEISM5Uz8j4/q7/lJ/lV2MGdQxqh+riwiKJ5Sv9iOPdPeofM+yted+7jIzDTNTb&#13;
-uQyJ9H1/+3Wx5AkZ/tKnaUmcz89TUP5zBDXbz30QZcoiXCf7tz1OShgBQVesISgGMk7/2BcQpPgR&#13;
-j67mtuNRJ3zvVZOoqq0aNjrd815uosyCFsaesGI5CHhcyGph3gBVQTDVX/88XiWO34glrMtlgOV+&#13;
-8zC9EY22LKLWKEtcD8ktc1FNFGhi6h4UQEl5xg==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_24e22af3-cae2-4e6b-9794-736fed411e94"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>qRibtrRZDXq2+OeVvGSsZSRNloJ2BRhI3z9R0GzQRVamj7upKapoENgVou2v8dleSSelslK+Tl6H&#13;
+tupvrh6/1w==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_6182ba81-8daa-4ace-807b-cc8486d4aad7"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>q0Po1ZLFGb61ful4QyXjxYttXdcc8P/HDdKS6L4mVp7lh3N7XNzqZnewr9CfykiRGr4zHRV4g5Ny&#13;
+RMZi3aGqvQ==</DigestValue></Reference></SignedInfo><SignatureValue>hlvomXYgXSf6LzSgeeRHGemqsvgR4p74WFjyT8xngyQ1N9aTAtKgYj87wPz9CmJ4vmyj7O/FtT0h&#13;
+cYLta6Yf2TZXW5kuDnZ+OHbTvc5Audr1B4FruVAw/1nw0RI15UBB5yvaYeeP5ZqEr7FDx1vevcVR&#13;
+9JLdV+9Q2aZNUkna4qqQ3/7V6GdZREy/YcolAIunPDssr0sSgtdYezSTef/bRjKkxcC1Kpnhs024&#13;
+Ce9fyhGKuB0Lgb5JRiUQpmv3a4veKjhx8yfNEOg5X5GYbL8frUFn3N0h/2DOSnr4mFKAHw1DIB8v&#13;
+6m0etmrcHHQu1AcmYAzdKz3Yi9T9qtzmWRollQ==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
@@ -1827,4 +1827,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_eab5d17c-4317-46f3-a383-55add89af93c" Target="#_d2020ae0-3117-4644-acc3-40012e8eae8f"><Timestamp>2024-03-21 02:23:39</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_6182ba81-8daa-4ace-807b-cc8486d4aad7" Target="#_24e22af3-cae2-4e6b-9794-736fed411e94"><Timestamp>2024-03-21 02:23:46</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
