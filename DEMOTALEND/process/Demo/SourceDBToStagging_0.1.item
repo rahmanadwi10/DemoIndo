@@ -6,9 +6,9 @@
     <contextParameter comment="" internalId="_D-o6s7wjEe6ayIqknw1qBA" name="SQLSERVER1_Schema" prompt="SQLSERVER1_Schema?" promptNeeded="false" repositoryContextId="_CTky8LwWEe6kFdszHmB07A" type="id_String" value="dbo"/>
     <contextParameter comment="" internalId="_D-qI0LwjEe6ayIqknw1qBA" name="SQLSERVER1_Password" prompt="SQLSERVER1_Password?" promptNeeded="false" repositoryContextId="_CTky8LwWEe6kFdszHmB07A" type="id_Password" value="enc:system.encryption.key.v1:Kn+yANbgkzg54hebsWx8y3clCFh8X2XhRgat4N2W7f8JyOGdFn+8LAj25KLJ"/>
     <contextParameter comment="" internalId="_D-qI0bwjEe6ayIqknw1qBA" name="SQLSERVER1_Login" prompt="SQLSERVER1_Login?" promptNeeded="false" repositoryContextId="_CTky8LwWEe6kFdszHmB07A" type="id_String" value="sa"/>
-    <contextParameter comment="" internalId="_D-qI0rwjEe6ayIqknw1qBA" name="SQLSERVER1_Server" prompt="SQLSERVER1_Server?" promptNeeded="false" repositoryContextId="_CTky8LwWEe6kFdszHmB07A" type="id_String" value="10.10.10.20"/>
+    <contextParameter comment="" internalId="_D-qI0rwjEe6ayIqknw1qBA" name="SQLSERVER1_Server" prompt="SQLSERVER1_Server?" promptNeeded="false" repositoryContextId="_CTky8LwWEe6kFdszHmB07A" type="id_String" value="192.168.10.120"/>
     <contextParameter comment="" internalId="_QWeaELwjEe6ayIqknw1qBA" name="Affiliate" prompt="Affiliate?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
-    <contextParameter comment="" internalId="_z8RLcL5gEe64zsK5-QO0CQ" name="MariaDB_Server" prompt="MariaDB_Server?" promptNeeded="false" repositoryContextId="_kp7CwL5gEe64zsK5-QO0CQ" type="id_String" value="10.10.10.20"/>
+    <contextParameter comment="" internalId="_z8RLcL5gEe64zsK5-QO0CQ" name="MariaDB_Server" prompt="MariaDB_Server?" promptNeeded="false" repositoryContextId="_kp7CwL5gEe64zsK5-QO0CQ" type="id_String" value="192.168.10.120"/>
     <contextParameter comment="" internalId="_z8RLcb5gEe64zsK5-QO0CQ" name="MariaDB_Login" prompt="MariaDB_Login?" promptNeeded="false" repositoryContextId="_kp7CwL5gEe64zsK5-QO0CQ" type="id_String" value="Dip"/>
     <contextParameter comment="" internalId="_z8RLcr5gEe64zsK5-QO0CQ" name="MariaDB_Port" prompt="MariaDB_Port?" promptNeeded="false" repositoryContextId="_kp7CwL5gEe64zsK5-QO0CQ" type="id_String" value="3306"/>
     <contextParameter comment="" internalId="_z8RLc75gEe64zsK5-QO0CQ" name="MariaDB_Password" prompt="MariaDB_Password?" promptNeeded="false" repositoryContextId="_kp7CwL5gEe64zsK5-QO0CQ" type="id_Password" value="enc:system.encryption.key.v1:j/EzG8D9onVMyYXm7zT6ydYLquQx5T/bJAvHc/vcsoAXxWZbvuEreG4="/>
@@ -1018,12 +1018,12 @@
   <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tJava_3" offsetLabelX="0" offsetLabelY="0" source="tJava_3" target="tDBInput_1">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnSubjobOk2"/>
   </connection>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tJava_4" offsetLabelX="0" offsetLabelY="0" source="tJava_4" target="tSetGlobalVar_2">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnComponentOk7"/>
+  </connection>
   <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tJava_4" offsetLabelX="0" offsetLabelY="0" source="tJava_4" target="tSendMail_1">
     <elementParameter field="CHECK" name="ACTIVATE" show="false" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnSubjobOk4"/>
-  </connection>
-  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tJava_4" offsetLabelX="0" offsetLabelY="0" source="tJava_4" target="tSetGlobalVar_2">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnComponentOk7"/>
   </connection>
   <connection connectorName="FLOW" label="row7" lineStyle="0" metaname="tStatCatcher_1" offsetLabelX="0" offsetLabelY="0" source="tStatCatcher_1" target="tDBOutput_3">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
@@ -1158,13 +1158,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="128;255;0"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_db77909c-39b8-41bc-be3a-c3ae9512100d"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>nX/qJXubrNJFXEtig8CRZHLFAH611dADwVcldIvYyRzZtdDHUHDte0xCrIwS0BcQsxLrqjSfjfqa&#13;
-fgoKx7xwzQ==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_c94a59cd-cda4-4ac7-a22d-44a6cf78bce5"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>hbZj8CrNqZLvzXx1CK+28hoII4NvWNYNtvmyFjsZIBBI+G5bFaDDHINjoh2ikM5qrYbIpIr8GG/2&#13;
-9BJZmyp5eQ==</DigestValue></Reference></SignedInfo><SignatureValue>EQ38jmW3DQB4JQlBdNhyMlwoACWI9BWAAKOFzBfyXomSLA8hUF7ryo2bTdJr7gddAMiounwsJ/bi&#13;
-kROZnlhqLDxcj/L/McJfZOTrjC4oJ6zlv+wf/dqGGMjhvdJWzKy3jm917tMYWeKGhEoRo5tIArFK&#13;
-vqvRkjBbole63Mg3xfyksFBrpY/86ZspLGaWdHlLgU6117YxDACR1ccBgAB7iVqm6Zk8SUgK6Y/1&#13;
-8Nsv1SbyILzU4DQCTlaeb2r0WlkthdOZGyB7Pi3QYlbX3GuyWXhuc+m5vwPEsPgeMldqAgCrXsYx&#13;
-jCyU5emFKbBpVZMl58Arzga7e4IpjgHq07kVPg==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_64349ced-15fb-4056-b577-4b13671457b1"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>rJrZJycOz83St3BW8DEUBayzr6CK4wCVeP8PQdoxXMYiLsWEwU+K6Ks7TcG/z/L+4gL+TGkwX39Z&#13;
+QhCDED46RA==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_bc91154c-5664-4228-a1e4-93059dc12784"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>D41lO7f3RZYvdM1kethUGhsQC0dTKxVj3QAHFeCjr5bCMuxhKO3hTIO+eL05SITpWVT5Mn42m1UJ&#13;
+itjErvlXMQ==</DigestValue></Reference></SignedInfo><SignatureValue>M41gVDQDltNtG//d04U2QoN1wrNZC1Be7covp3xUomka7gnrCKHMAwf4eegcOa20D+loRs6q6QTu&#13;
+IfbPazw/w9IonIv+iwdQiC6P0DdY1kVqazhiFUIQgIkbqG5BfFKq+4LDHXzjBpEh6PgsCN4RvqjM&#13;
+dePYqvjOv/V+gTZi4VbOcssL8/wkJfe1pgLWkv7kXYsYqBbbXkDyceWBWhkhPd4tWh7xBirjCqY3&#13;
+PJQxZ0pUWfxHbIZ4eSGX7GWuF5kL5bNodstUfYawZw+q7z2IEB1tzaqiiMVFjxluifv7ev6GVXBv&#13;
+ZEOesjYtG7v/8RtKZdyOwkcsHgnrFnGK8QqccQ==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
@@ -1186,4 +1186,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_c94a59cd-cda4-4ac7-a22d-44a6cf78bce5" Target="#_db77909c-39b8-41bc-be3a-c3ae9512100d"><Timestamp>2024-03-04 11:56:49</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_bc91154c-5664-4228-a1e4-93059dc12784" Target="#_64349ced-15fb-4056-b577-4b13671457b1"><Timestamp>2024-03-21 02:29:27</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
