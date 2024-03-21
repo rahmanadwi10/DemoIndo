@@ -2,4 +2,5 @@
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:softwaredeployment="http://www.talend.org/cwm/foundation/softwaredeployment/2010">
   <softwaredeployment:TdSoftwareSystem xmi:id="_mut1gN6gEe6fmJ3kcMKgiA" name="PostgreSQL" subtype="PostgreSQL" version="14.10 (Ubuntu 14.10-0ubuntu0.22.04.1)"/>
   <softwaredeployment:TdSoftwareSystem xmi:id="_GoY80N6hEe6fmJ3kcMKgiA" name="PostgreSQL" subtype="PostgreSQL" version="16.2 (Debian 16.2-1.pgdg120+2)"/>
+  <softwaredeployment:TdSoftwareSystem xmi:id="_DZ0TEOcoEe6SdIR6GcQYUQ" name="PostgreSQL" subtype="PostgreSQL" version="16.1 (Debian 16.1-1.pgdg120+1)"/>
 </xmi:XMI>
